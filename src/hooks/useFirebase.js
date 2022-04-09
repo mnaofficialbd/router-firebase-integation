@@ -36,7 +36,7 @@ const useFirebase = () => {
 
 
   // return [user,setUser]
-  return { user, signInWithGoogle,handleSignOut }
+  return { user, signInWithGoogle, handleSignOut }
 };
 
 export default useFirebase;
