@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <h2>Router Firebase Integration</h2>
+      <Link to="/">Home</Link>
+      <Link to="/login">Log In</Link>
     </div>
   );
 }
