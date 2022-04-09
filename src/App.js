@@ -1,12 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import { Link } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
+import Home from './Components/Home/Home';
+import Login from './Components/Login/Login';
+import Header from './Components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <Link to="/">Home</Link>
-      <Link to="/login">Log In</Link>
+      <Header></Header>
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/home' element={<Home/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
+      </Routes>
     </div>
   );
 }
