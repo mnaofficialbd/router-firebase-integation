@@ -7,7 +7,7 @@ import app from '../../firebase.init';
 const auth = getAuth(app);
 
 const Login = () => {
-    const [signInWithGoogle, user] = useSignInWithGoogle(auth);
+    const [signInWithGoogle] = useSignInWithGoogle(auth);
     return (
         <div>
             <h3>Please Login</h3>
