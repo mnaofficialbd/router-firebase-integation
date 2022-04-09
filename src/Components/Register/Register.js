@@ -4,9 +4,9 @@ const Register = () => {
     return (
         <div>
             <h3>Please Register</h3>
-            <div style={{margin: '20px'}}>
+            {/* <div style={{margin: '20px'}}>
             <button>Google Sign In</button>
-            </div>
+            </div> */}
             <form >
                 <input type="text" placeholder='Your Name'/>
                 <br />
